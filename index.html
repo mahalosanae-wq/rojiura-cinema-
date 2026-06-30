@@ -186,8 +186,9 @@
   .stop.guest-stop::before{border-color:var(--ember);box-shadow:0 0 14px rgba(248,182,115,.6),0 0 0 4px rgba(248,182,115,.2)}
   .stop .num{font-family:var(--display);color:var(--foam);font-weight:600;font-size:.92rem;margin-right:.7em}
   .stop .time{font-family:var(--display);font-size:1.24rem;font-weight:600;color:var(--pearl)}
-  .stop .after{display:block;font-size:.88rem;color:var(--pearl-dim);margin-top:.35rem;letter-spacing:.03em}
+  .stop .after{display:block;font-size:.88rem;color:var(--pearl-dim);margin-top:.45rem;letter-spacing:.03em;line-height:1.8}
   .stop .after b{color:var(--ember);font-weight:700}
+  .stop .after .guest-line{display:block;margin-top:.2rem;color:var(--foam);font-weight:500}
 
   /* aftersession */
   .after-card{
@@ -241,6 +242,15 @@
   footer .det{font-size:.87rem;color:var(--pearl-dim);font-weight:500;line-height:2}
   footer a{color:var(--foam);text-decoration:none}
   footer a:hover{color:var(--gold)}
+  .footer-sns{margin-top:1.8rem;display:flex;flex-direction:column;align-items:center;gap:.7rem}
+  .sns-label{font-size:.72rem;letter-spacing:.38em;color:var(--jade);font-weight:700;margin-bottom:.2rem}
+  .sns-link{
+    display:inline-flex;align-items:center;gap:.6em;
+    color:var(--foam);text-decoration:none;font-size:.92rem;font-weight:500;
+    border:1px solid rgba(121,216,198,.3);border-radius:999px;
+    padding:.5rem 1.2rem;transition:background .2s,border-color .2s;
+  }
+  .sns-link:hover{background:rgba(121,216,198,.12);border-color:rgba(121,216,198,.6);color:var(--gold)}
 
   /* sticky apply */
   .sticky-cta{
@@ -269,7 +279,9 @@
     *{animation:none!important;scroll-behavior:auto!important}
     .reveal{opacity:1;transform:none;transition:none}
   }
-</style>
+    </style>
+
+<!-- ============ AFTER SESSION ============ -->
 </head>
 <body>
 
@@ -352,16 +364,19 @@
       <div class="day-block">
         <div class="day-head">
           <span class="d">7.3</span><span class="w">FRIDAY 金</span>
-          <span class="guest">音を紡ぐ体験 ── 緒結火</span>
         </div>
         <div class="stops">
           <div class="stop">
             <span class="num">①</span><span class="time">13:00 – 14:20</span>
-            <span class="after">上映後 <b>14:30〜</b> アフターセッション「音を紡ぐ体験」</span>
+            <span class="after">上映後 <b>14:30〜</b> ソングラインアフターセッション 音を紡ぐ体験
+              <span class="guest-line">（緒結火）</span>
+            </span>
           </div>
           <div class="stop">
             <span class="num">②</span><span class="time">16:00 – 17:20</span>
-            <span class="after">上映後 <b>17:30〜</b> アフターセッション「音を紡ぐ体験」</span>
+            <span class="after">上映後 <b>17:30〜</b> ソングラインアフターセッション 音を紡ぐ体験
+              <span class="guest-line">（緒結火）</span>
+            </span>
           </div>
         </div>
       </div>
@@ -369,29 +384,48 @@
       <div class="day-block">
         <div class="day-head">
           <span class="d">7.4</span><span class="w">SATURDAY 土</span>
-          <span class="guest">音を紡ぐ体験 ── ゲスト 星野優也 × 緒結火</span>
         </div>
         <div class="stops">
           <div class="stop guest-stop">
             <span class="num">③</span><span class="time">10:00 – 11:20</span>
-            <span class="after">上映後 <b>11:30〜</b> アフターセッション（星野優也×緒結火）</span>
+            <span class="after">上映後 <b>11:30〜</b> ソングラインアフターセッション 音を紡ぐ体験
+              <span class="guest-line">（ゲスト 星野優也 × 緒結火）</span>
+            </span>
           </div>
           <div class="stop guest-stop">
             <span class="num">④</span><span class="time">13:30 – 14:50</span>
-            <span class="after">上映後 <b>15:00〜</b> アフターセッション（星野優也×緒結火）</span>
+            <span class="after">上映後 <b>15:00〜</b> ソングラインアフターセッション 音を紡ぐ体験
+              <span class="guest-line">（ゲスト 星野優也・米倉宏明・ジャスミン × 緒結火）</span>
+            </span>
           </div>
           <div class="stop guest-stop">
             <span class="num">⑤</span><span class="time">16:30 – 17:50</span>
-            <span class="after">上映後 <b>18:00〜</b> アフターセッション（星野優也×緒結火）</span>
+            <span class="after">上映後 <b>18:00〜</b> ソングラインアフターセッション 音を紡ぐ体験
+              <span class="guest-line">（ゲスト 星野優也・米倉宏明・ジャスミン × 緒結火）</span>
+            </span>
           </div>
         </div>
       </div>
 
     </div>
+    <figure class="schedule-photo">
+      <img src="onmusubi1.jpg" alt="緒結火 o∞nmusubi">
+      <figcaption>緒結火</figcaption>
+    </figure>
   </div>
 </section>
 
-<!-- ============ AFTER SESSION ============ -->
+<style>
+.schedule-photo{margin:3.2rem auto 0;max-width:420px;text-align:center}
+.schedule-photo img{
+  width:100%;border-radius:18px;display:block;
+  box-shadow:0 22px 50px rgba(0,0,0,.4),0 0 0 1px rgba(121,216,198,.22);
+}
+.schedule-photo figcaption{
+  margin-top:1rem;font-family:var(--display);font-size:1.05rem;
+  color:var(--gold);letter-spacing:.25em;font-weight:600;
+}
+</style>
 <section class="pad-lg bg-abyss">
   <div class="wrap narrow reveal">
     <span class="eyebrow">After Session</span>
@@ -437,6 +471,9 @@
 
 <!-- ============ ACCESS ============ -->
 <section id="access" class="pad bg-abyss">
+  <div class="wrap reveal">
+    <div style="text-align:center">
+      <span class="eyebrow">Access</span>
       <h2 class="sect" style="text-align:center">会場・アクセス</h2>
     </div>
     <div class="info-grid">
@@ -490,17 +527,6 @@
     </a>
   </div>
 </footer>
-<style>
-.footer-sns{margin-top:1.8rem;display:flex;flex-direction:column;align-items:center;gap:.7rem}
-.sns-label{font-size:.72rem;letter-spacing:.38em;color:var(--jade);font-weight:700;margin-bottom:.2rem}
-.sns-link{
-  display:inline-flex;align-items:center;gap:.6em;
-  color:var(--foam);text-decoration:none;font-size:.92rem;font-weight:500;
-  border:1px solid rgba(121,216,198,.3);border-radius:999px;
-  padding:.5rem 1.2rem;transition:background .2s,border-color .2s;
-}
-.sns-link:hover{background:rgba(121,216,198,.12);border-color:rgba(121,216,198,.6);color:var(--gold)}
-</style>
 
 <div class="sticky-cta" id="stickyCta">
   <a href="https://docs.google.com/forms/d/e/1FAIpQLScJSQi1-2SVXGNaqPDxE1VDuTuOJ1WCVTjv4kmhzd1z8GgCcg/viewform" target="_blank" rel="noopener">参加を申し込む →</a>
